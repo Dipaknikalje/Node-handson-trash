@@ -41,17 +41,6 @@ router.get("/login",async(req,res)=>{
     res.send("please do not try to hack")
 })
 
-router.get("/find-by-email",(req,res)=>{
-    res.send("find by email logic executed")
-})
-
-router.get("/get-all-users",(req,res)=>{
-    res.send("get all users logic executed")
-})
-
-
-
-
 router.post("/change-password",(req,res)=>{
     const {authorization} = req.headers
     // console.log(token)
